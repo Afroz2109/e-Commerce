@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     Logout();
     function sellerSignin() {
-        const sellerSigninButton = document.querySelector('.sellerLogin');
+        const sellerSigninButton = document.querySelector('.All-buttonTwo');
         console.log(sellerSigninButton); // Check if the button is selected correctly
         if (sellerSigninButton) {
             sellerSigninButton.addEventListener('click', () => {
