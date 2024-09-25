@@ -203,16 +203,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Logout();
 
-    function sellerSignin() {
-        const sellerSigninButton = document.querySelector('.All-buttonTwo');
-        if (sellerSigninButton) {
-            sellerSigninButton.addEventListener('click', () => {
-                window.location.href = "https://e-commerce-f523.onrender.com/sellerSignin";
-            });
-        }
+   function sellerSignin() {
+    const sellerSigninButton = document.querySelector('.All-buttonTwo');
+    if (sellerSigninButton) {
+        sellerSigninButton.addEventListener('click', () => {
+            window.location.href = 'https://e-commerce-f523.onrender.com/sellerSignin';
+        });
     }
-    
+}
+
+document.addEventListener('DOMContentLoaded', () => {
     sellerSignin();
+});
+
 
     
 });
