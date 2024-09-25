@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (logoutButton) {
             logoutButton.addEventListener('click', () => {
                 // console.log('Logout button clicked');
-                window.location.href = 'http://localhost:5000/signin';
+                window.location.href = 'https://e-commerce-f523.onrender.com/signin';
             });
         }
     }
