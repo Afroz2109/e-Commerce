@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sellerSigninButton = document.querySelector('.All-buttonTwo');
         if (sellerSigninButton) {
             sellerSigninButton.addEventListener('click', () => {
-                window.location.href = 'https://e-commerce-f523.onrender.com/sellerSignin';
+                window.location.href = "https://e-commerce-f523.onrender.com/sellerSignin";
             });
         }
     }
