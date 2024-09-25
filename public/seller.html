@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/grid.png" alt="">
+            <h3>START SELLER</h3>
+                <a href="">
+                    <img class="editImg2" src="./images/user (1).png" alt="">
+                </a>
+                <button class="All-buttonTwo">Logout</button>
+        </nav>
+    </header>
+    <section class="sellerProducts">
+        <div class="left">
+            <h4>Sales Performance</h4>
+            <img src="./images/saleperfo.jpg" alt="">
+        </div>
+        <div id="rightSide">
+            <h4>Your Products</h4>
+            <button class="AddNewProduct">Add New Product</button>
+        </div>
+        <div id="right">
+            <div class="product">
+                <img class="image" src="./images/product1.jpeg" alt="">
+                <h6 class="productName">Vegetable Bag</h6>
+                <div class="productPrice">₹150 <span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product2.jpeg" alt="">
+                <h6 class="productName">Watches</h6>
+                <div class="productPrice">₹1999 <span>(25% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product3.jpeg" alt="">
+                <h6 class="productName">Fashion</h6>
+                <div class="productPrice">₹5999<span>(30% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image"src="./images/product4.jpeg" alt="">
+                <h6 class="productName">Lights</h6>
+                <div class="productPrice">₹999<span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product5.jpeg" alt="">
+                <h6 class="productName">Printer</h6>
+                <div class="productPrice">₹4999<span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product6.jpeg" alt="">
+                <h6 class="productName">Toys</h6>
+                <div class="productPrice">₹999<span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product7.avif" alt="">
+                <h6 class="productName">Shirts</h6>
+                <div class="productPrice">₹799<span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+            <div class="product">
+                <img class="image" src="./images/product8.jpeg" alt="">
+                <h6 class="productName">Trophies</h6>
+                <div class="productPrice">₹799<span>(10% OFF)</span></div>
+                <span><button class="Deletebutton">Delete</button>  <button class="Editbutton">Edit</button></span>
+            </div>
+    </div>
+    </section>
+    <section class="createProduct">
+        <div class="form">
+            <input class="ProductTitle" type="text" placeholder="productTitle">
+            <input class="ProductDescription"  type="text" placeholder="productDescription">
+            <input class="ProductPrice" type="text" placeholder="productPrice">
+            <input class="ProductDiscount" type="text" placeholder="productDiscount">
+            <input class="ProductCategory" type="text" placeholder="productCategory">
+            <input class="ProductImg-URL" type="url" placeholder="product image url">
+            <button class="AddProduct">Add Product</button>
+        </div>
+        <div class="rightSeller">
+            <h3>LIVE PREVIEW</h3>
+            <p>This is how, your customers will see your product on the website</p>
+        </div>
+        <div class="pro">
+            <!-- <img class="image" src="./images/grocerypart.jpg" alt="">
+            <h6 class="productName">Trophies</h6>
+            <div class="productPrice">₹799<span>(10% OFF)</span></div>
+            <button class="sellerButton">Add to Cart</button> -->
+        </div>
+    </section>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    function SellerProduct() {
+        const addProductButton = document.querySelector('.AddNewProduct');
+
+        if (addProductButton) {
+            addProductButton.addEventListener('click', () => {
+                const createProductSection = document.querySelector('.createProduct');
+                if (createProductSection) {
+                    createProductSection.style.display = 'block';
+                }
+            });
+        }
+    }
+
+    SellerProduct();
+
+    function CreateProducts() {
+        const addButton = document.querySelector('.AddProduct');
+
+        if (addButton) {
+            addButton.addEventListener('click', () => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'pro'; // This is fine if 'pro' class does not conflict
+
+                const productImg = document.createElement('img');
+                productImg.src = document.querySelector('.ProductImg-URL').value;
+                productImg.className = 'image';
+
+                const productName = document.createElement('h6');
+                productName.className = 'productName';
+                productName.innerText = document.querySelector('.ProductTitle').value;
+
+                const productPrice = document.createElement('div');
+                productPrice.className = 'productPrice';
+                const price = document.querySelector('.ProductPrice').value;
+                const discount = document.querySelector('.ProductDiscount').value;
+                productPrice.innerHTML = `₹${price} <span>(${discount}% OFF)</span>`;
+
+                const cartButton = document.createElement('button');
+                cartButton.className = 'sellerButton';
+                cartButton.innerText = 'Add to Cart';
+
+                productDiv.appendChild(productImg);
+                productDiv.appendChild(productName);
+                productDiv.appendChild(productPrice);
+                productDiv.appendChild(cartButton);
+
+                // Append new product to the .rightSeller section
+                document.querySelector('.rightSeller').appendChild(productDiv);
+            });
+        }
+    }
+
+    CreateProducts();
+
+    function SellerlogOut() {
+        const logoutButton = document.querySelector('.All-buttonTwo');
+        
+        if (logoutButton) {
+            logoutButton.addEventListener('click', () => {
+                // console.log('Logout button clicked');
+                
+                window.location.href = 'http://localhost:5000/sellerSignin';  // Ensure the URL is correct for logout
+            });
+        } else {
+            console.log('Logout button not found');
+        }
+    }
+    
+    SellerlogOut()
+
+    function setupDeleteButtons() {
+        const deleteButtons = document.querySelectorAll('.Deletebutton');
+        
+        deleteButtons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+                const productDiv = event.target.closest('.product');
+                productDiv.remove();  // Remove the product from the DOM
+            });
+        });
+    }
+
+    // EDIT Functionality
+    function setupEditButtons() {
+        const editButtons = document.querySelectorAll('.Editbutton');
+        
+        editButtons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+                const productDiv = event.target.closest('.product');
+                
+                // Get the existing product data
+                const productName = productDiv.querySelector('.productName').innerText;
+                const productPrice = productDiv.querySelector('.productPrice').innerText.match(/₹(\d+)/)[1];  // Extract price
+                const productDiscount = productDiv.querySelector('.productPrice span').innerText.match(/\((\d+)% OFF\)/)[1]; // Extract discount
+                const productImgUrl = productDiv.querySelector('.image').src;
+
+                // Fill the form with the existing data
+                document.querySelector('.ProductTitle').value = productName;
+                document.querySelector('.ProductPrice').value = productPrice;
+                document.querySelector('.ProductDiscount').value = productDiscount;
+                document.querySelector('.ProductImg-URL').value = productImgUrl;
+
+                // Update button text to 'Save Changes'
+                const addButton = document.querySelector('.AddProduct');
+                addButton.innerText = 'Save Changes';
+
+                // Save changes on click
+                addButton.addEventListener('click', () => {
+                    // Update the product with new data
+                    productDiv.querySelector('.productName').innerText = document.querySelector('.ProductTitle').value;
+                    productDiv.querySelector('.productPrice').innerHTML = `₹${document.querySelector('.ProductPrice').value} <span>(${document.querySelector('.ProductDiscount').value}% OFF)</span>`;
+                    productDiv.querySelector('.image').src = document.querySelector('.ProductImg-URL').value;
+
+                    // Reset the form and button after editing
+                    document.querySelector('.ProductTitle').value = '';
+                    document.querySelector('.ProductPrice').value = '';
+                    document.querySelector('.ProductDiscount').value = '';
+                    document.querySelector('.ProductImg-URL').value = '';
+                    addButton.innerText = 'Add Product';
+                }, { once: true });  // Ensure the listener only fires once
+            });
+        });
+    }
+
+    // Call the setup functions to attach listeners to existing buttons
+    setupDeleteButtons();
+    setupEditButtons();
+});
+
+
+
+
+</script>

@@ -1,0 +1,1451 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins';
+    }
+
+    @media(min-width:360px) {
+
+        header {
+            height: 4rem;
+            /* background: rgb(249, 249, 142); */
+            width: 100%;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 120%;
+            background-color:  rgb(249, 249, 142);
+        }
+        .navbar img {
+            height: 1.6rem;
+            margin-top: 1.5%;
+            margin-left: 2%;
+        }
+        .navbar a img {
+            height: 1.6rem;
+            margin-top: 2.7%;
+            margin-left: 4%;
+        }
+        .navbar h3 {
+            font-size: 1rem;
+            margin-left: 5%;
+            width: 100%;
+            margin-top: 3%;
+            color: crimson;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin-left: 2%;
+            margin-right: -1%;
+            margin-top: 1.6%;
+        }
+        .navbar .label {
+            margin-left: 5%;
+        }
+        .navbar .All-button {
+            background-color: lightseagreen;
+            color: black;
+            border-radius: 3px;
+            border: 1px solid lightseagreen;
+            width: 25%;
+            height: 1.9rem;
+            margin: 1%;
+            margin-top: 1.7%;
+            margin-left: 2%;
+        }
+        .navbar label {
+            font-size: 0.6rem;
+            margin-top: 4%;
+            margin-left: -1.5%;
+        }
+        .displayAll {
+            height: 28vh;
+            width: 120%;
+            margin-top: -13%;
+            background: #FC354C;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C); 
+            background: linear-gradient(to right, #0ABFBC, #FC354C);
+        }
+
+        .displayscreenOne {
+            margin-top: 8%;
+            margin-bottom: 10%;
+        }
+        .displayscreenOne h3 {
+            font-size: 1rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+        .displayscreenOne p {
+            font-size: 0.6rem;
+            width: 62%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        .displayscreenOne .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.2rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenOne h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            font-weight: 400;
+        }
+        .displayscreenOne .brands {
+            margin-left: 9%;
+            gap: 1rem;
+        }
+        .displayscreenOne .brands img {
+            height: 1rem;
+            margin-top: 2%;
+            margin-left: -3%;
+            margin: 0.1rem;
+        }
+        .displayscreenOne .mainImg img {
+            margin-left: 50%;
+            height: 18vh;
+            margin-top: -21%;
+        } 
+        /*Second    onr f f,mfnv */
+        .displayscreenTwo {
+            display: none;
+            margin-top: 8%;
+        }
+        .displayscreenTwo h3 {
+            font-size: 1rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenTwo p {
+            font-size: 0.6rem;
+            width: 62%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        .displayscreenTwo .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.2rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenTwo h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            font-weight: 400;
+        }
+        .displayscreenTwo .brands {
+            margin-left: 9%;
+        }
+        .displayscreenTwo .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenTwo .mainImg img {
+            margin-left: 50%;
+            height: 18vh;
+            margin-top: -21%;
+        }
+        .NextImage img, .PreviousImage img {
+            height: 1rem;
+            cursor: pointer;
+            position: absolute;
+            top: 22%;
+            transform: translateY(-50%);
+            z-index: 10; 
+        }
+        
+        .NextImage img {
+            right: -55px; 
+        }
+        
+        .PreviousImage img {
+            left: 4px;
+        }
+        
+        .displayscreenThree {
+            display: none;
+            margin-top: 8%;
+        }
+        .displayscreenThree h3 {
+            font-size: 1rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenThree p {
+            font-size: 0.6rem;
+            width: 62%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        .displayscreenThree .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.2rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenThree h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            font-weight: 400;
+        }
+        .displayscreenThree .mainImg img {
+            margin-left: 24%;
+        }
+        .displayscreenThree .brands {
+            margin-left: 9%;
+        }
+        .displayscreenThree .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenThree .mainImg img {
+            margin-left: 50%;
+            height: 18vh;
+            margin-top: -21%;
+        }
+        .displayscreenFour {
+            display: none;
+            margin-top: 8%;
+        }
+        .displayscreenFour h3 {
+            font-size: 1rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFour p {
+            font-size: 0.6rem;
+            width: 62%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        .displayscreenFour .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.2rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFour h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            font-weight: 400;
+        }
+        .displayscreenFour .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFour .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFour .mainImg img {
+            margin-left: 50%;
+            height: 18vh;
+            margin-top: -21%;
+        }
+    
+        .displayscreenFive {
+            display: none;
+            margin-top: 8%;
+        }
+        .displayscreenFive h3 {
+            font-size: 1rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFive p {
+            font-size: 0.6rem;
+            width: 62%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        .displayscreenFive .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.2rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFive h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            font-weight: 400;
+        }
+        .displayscreenFive .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFive .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+    
+        .displayscreenFive .mainImg img {
+            margin-left: 50%;
+            height: 18vh;
+            margin-top: -21%;
+        }
+    
+        /* ---Section --3 */
+        .heading {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1%;
+        }
+        .heading h3 {
+            font-size: 1rem;
+            margin-left: -3%;
+            margin-top: 2%;
+        }
+        .heading input {
+            width: 27%;
+            border-radius: 6px;
+            border: 1px solid lightgrey;
+            outline: none;
+            margin-top: 2%;
+            padding: 0.2rem;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .deals {
+            height: 100vh;
+        }
+        .dealLinks h3 {
+            margin-left: -7%;
+            margin-top: -19%;
+            font-weight: bold;
+            color: rgb(62, 48, 48);
+        }
+        .dealLinks .deal img {
+            height: 30px;
+            width: 30px;
+            margin-top: 39%;
+            border: 1px solid lightgray;
+            border-radius: 50%;
+            margin-left: -50%;
+        }
+        .dealLinks {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: 0.7rem;
+            padding: 0.2rem;
+            grid-gap: 0.3rem;
+            width: 90%;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+        .deal label {
+           margin-left: -45%;
+           font-size: 0.5rem;
+        }
+        hr {
+            color: lightgray;
+        } 
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 1rem;
+            margin-top: 5%;
+            margin-left: 7%;
+        }
+        .products .product img {
+            height: 20vh;
+            width: 22vh;
+        }
+        .products .product .AddtoCartbutton {
+            border: 1px solid tomato;
+            border-radius: 22px;
+            background-color: tomato;
+            padding: 0.3rem;
+            margin: 0.6rem;
+        }
+        .deal a  {
+            text-decoration: none;
+        }
+        .products .product span {
+            margin-top: 1%;
+        }
+        .cart {
+            margin-top: 15%;
+        }
+        .product span {
+            color: green;
+            font-size: 0.7rem;
+        }
+        .under {
+            margin-top: 155%;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            width: 120%;
+            padding: 0.2rem;
+            background-color: #333;
+            margin-top: 5%;
+            /* margin-left: 1%; */
+            height: 12vh;
+        }
+        .boxes ul li {
+            margin-top: 5%;
+            list-style: none;
+            color: white;
+            font-size: 0.5rem;
+            font-weight: lighter;
+        }
+        .boxes ul li h4 {
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-top: 3%;
+        }
+        a{
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+        .PurchaseButton {
+            border: 1px solid blue;
+            border-radius: 6px;
+            background-color: blue;
+            padding: 0.2rem;
+            margin-top: 5%;
+    
+        }
+    
+        .cart {
+            margin-top: 5%;
+            padding: 10px;
+            width: 100%;
+            margin-left: 1%;
+            border: 1px solid #ccc;
+            justify-content: space-evenly;
+        }
+        .cart ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 3%;
+        }
+    
+        .cart ul  li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 0.6rem;
+            margin-left: -5%;
+        }
+        .left img {
+            height: 35vh;
+            width: 30vh;
+            margin-left: -3%;
+        }
+        .increase, .decrease {
+            border: 1px solid #333;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+        }
+        .Deletebutton {
+            border: 1px solid red;
+            outline: none;
+            background-color: red;
+            border-radius: 6px;
+            padding: 0.1rem;
+            height: 1.8rem;
+        }
+
+    }
+
+    @media(min-width: 700px) {
+
+        .navbar h3 {
+            font-size: 1.2rem;
+            margin-top: 2%;
+        }
+
+        .displayAll {
+            width: 120%;
+            height: 38vh;
+        }
+        .dealLinks {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            margin: 1.5rem;
+            padding: 0.3rem;
+            grid-gap: 2rem;
+            width: 90%;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 2rem;
+            margin-top: 3%;
+            margin-left: 7%;
+        }
+        .under {
+            margin-top: 12%;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 5%;
+            justify-items: center;
+            padding: 0.3rem;
+            background-color: #333;
+            height: 20vh;
+            margin-left: -1%;
+            width: 120%;
+        }
+        .displayscreenOne {
+            margin-top: 11%;
+            margin-bottom: 10%;
+        }
+        .displayscreenOne h3 {
+            font-size: 1.5rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+        .displayscreenOne p {
+            font-size: 0.9rem;
+            width: 52%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .displayscreenOne .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.3rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.5rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenOne h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 6%;
+            font-weight: 400;
+        }
+        .displayscreenOne .brands {
+            margin-left: 9%;
+        }
+        .displayscreenOne .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenOne .mainImg img {
+            margin-left: 62%;
+            height: 28vh;
+            margin-top: -21%;
+        } 
+        /*Second    onr f f,mfnv */
+        .displayscreenTwo {
+            display: none;
+            margin-top: 11%;
+        }
+        .displayscreenTwo h3 {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenTwo p {
+            font-size: 0.9rem;
+            width: 52%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .displayscreenTwo .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.3rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.5rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenTwo h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 8%;
+            font-weight: 400;
+        }
+        .displayscreenTwo .brands {
+            margin-left: 9%;
+        }
+        .displayscreenTwo .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenTwo .mainImg img {
+            margin-left: 62%;
+            height: 28vh;
+            margin-top: -21%;
+        }
+        .NextImage img, .PreviousImage img {
+            height: 1.2rem;
+            cursor: pointer;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            z-index: 10; 
+        }
+        
+        .NextImage img {
+            right: -115px; 
+        }
+        
+        .PreviousImage img {
+            left: 4px;
+        }
+        
+        .displayscreenThree {
+            display: none;
+            margin-top: 11%;
+        }
+        .displayscreenThree h3 {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenThree p {
+            font-size: 0.9rem;
+            width: 52%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .displayscreenThree .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.3rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.5rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenThree h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 8%;
+            font-weight: 400;
+        }
+        .displayscreenThree .mainImg img {
+            margin-left: 24%;
+        }
+        .displayscreenThree .brands {
+            margin-left: 9%;
+        }
+        .displayscreenThree .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenThree .mainImg img {
+            margin-left: 62%;
+            height: 28vh;
+            margin-top: -21%;
+        }
+        .displayscreenFour {
+            display: none;
+            margin-top: 11%;
+        }
+        .displayscreenFour h3 {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFour p {
+            font-size: 0.9rem;
+            width: 52%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .displayscreenFour .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.3rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.5rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFour h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 8%;
+            font-weight: 400;
+        }
+        .displayscreenFour .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFour .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFour .mainImg img {
+            margin-left: 62%;
+            height: 28vh;
+            margin-top: -21%;
+        }
+    
+        .displayscreenFive {
+            display: none;
+            margin-top: 11%;
+        }
+        .displayscreenFive h3 {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-left: 3%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFive p {
+            font-size: 0.9rem;
+            width: 52%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .displayscreenFive .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.3rem;
+            margin: 0.2rem;
+            margin-left: 6%;
+            height: 1.5rem;
+            margin-top: 1.5%;
+        }
+        .displayscreenFive h5 {
+            margin-top: 1.5%;
+            font-size: 0.9rem;
+            margin-left: 8%;
+            font-weight: 400;
+        }
+        .displayscreenFive .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFive .brands img {
+            height: 1rem;
+            margin-top: 1.5%;
+        }
+    
+        .displayscreenFive .mainImg img {
+            margin-left: 62%;
+            height: 28vh;
+            margin-top: -21%;
+        }
+    
+    }
+ 
+    @media(min-width:1200px) {
+
+
+        header {
+            height: 5.3rem;
+            background: rgb(249, 249, 142);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navbar img {
+            height: 1.9rem;
+            margin-top: 1.5%;
+            margin-left: 2%;
+        }
+        .navbar a img {
+            height: 1.9rem;
+            margin-top: 2.7%;
+            margin-left: 4%;
+        }
+        .navbar h3 {
+            font-size: 2rem;
+            margin-left: 5%;
+            width: 100%;
+            margin-top: 1%;
+            color: crimson;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin-left: 2%;
+            margin-right: -1%;
+            margin-top: 1.6%;
+        }
+        .navbar .label {
+            margin-left: 5%;
+        }
+        .navbar .All-button {
+            background-color: lightseagreen;
+            color: black;
+            border-radius: 3px;
+            border: 1px solid lightseagreen;
+            width: 6%;
+            height: 1.9rem;
+            margin: 1%;
+            margin-top: 1.7%;
+            margin-left: 2%;
+        }
+        .navbar label {
+            font-size: 0.6rem;
+            margin-top: 4%;
+            margin-left: -1.5%;
+        }
+        .displayAll {
+            height: 55vh;
+            margin-top: -4%;
+            width: 100%;
+            background: #FC354C;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C); 
+            background: linear-gradient(to right, #0ABFBC, #FC354C); 
+        }
+        .displayscreenOne {
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        .displayscreenOne h3 {
+            font-size: 1.7rem;
+            width: 100%;
+            margin-left: 9%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+        .displayscreenOne p {
+            font-size: 1rem;
+            width: 42%;
+            margin-left: 9%;
+            margin-top: 2%;
+        }
+        .displayscreenOne .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 9%;
+            height: 1.9rem;
+            margin-top: 2%;
+        }
+        .displayscreenOne h5 {
+            margin-top: 1.9%;
+            font-size: 1.2rem;
+            margin-left: 9%;
+            font-weight: 400;
+        }
+        /* .displayscreenOne .brands {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 22%;
+            margin-left: 9%;
+            margin-top: 2%;
+            padding: 0.5rem;
+        } */
+
+        .displayscreenFive .brands {
+            margin-left: 9%;
+        }
+        .displayscreenOne .brands img {
+            height: 1.7rem;
+            margin-top: 3%;
+        }
+        .displayscreenOne .mainImg img {
+            height: 45vh;
+            margin-left: 59%;
+            margin-top: -18%;
+        } 
+        .displayscreenTwo {
+            display: none;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        .displayscreenTwo h3 {
+            font-size: 1.7rem;
+            width: 100%;
+            margin-left: 9%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenTwo p {
+            font-size: 1rem;
+            width: 42%;
+            margin-left: 9%;
+            margin-top: 1.5%;
+        }
+        .displayscreenTwo .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 9%;
+            height: 1.9rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenTwo h5 {
+            margin-top: 1.9%;
+            font-size: 1.2rem;
+            margin-left: 9%;
+            font-weight: 400;
+        }
+        .displayscreenTwo .brands {
+            margin-left: 9%;
+        }
+        .displayscreenTwo .brands img {
+            height: 2rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenTwo .mainImg img {
+            height: 45vh;
+            margin-left: 59%;
+            margin-top: -18%;
+        }
+        .NextImage img, .PreviousImage img {
+            height: 2rem;
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            z-index: 10; 
+        }
+        
+        .NextImage img {
+            right: 14px; 
+        }
+        
+        .PreviousImage img {
+            left: 14px;
+        }
+        
+        .displayscreenThree {
+            display: none;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        .displayscreenThree h3 {
+            font-size: 1.7rem;
+            width: 50%;
+            margin-left: 9%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenThree p {
+            font-size: 1rem;
+            width: 42%;
+            margin-left: 9%;
+            margin-top: 1.9%;
+        }
+        .displayscreenThree .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 9%;
+            height: 1.9rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenThree h5 {
+            margin-top: 1.9%;
+            font-size: 1.2rem;
+            margin-left: 9%;
+            font-weight: 400;
+        }
+        .displayscreenThree .mainImg img {
+            margin-left: 24%;
+        }
+        .displayscreenThree .brands {
+            margin-left: 9%;
+        }
+        .displayscreenThree .brands img {
+            height: 2rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenThree .mainImg img {
+            height: 45vh;
+            margin-left: 59%;
+            margin-top: -18%;
+        }
+        .displayscreenFour {
+            display: none;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        .displayscreenFour h3 {
+            font-size: 1.7rem;
+            width: 100%;
+            margin-left: 9%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFour p {
+            font-size: 1rem;
+            width: 42%;
+            margin-left: 9%;
+            margin-top: 1.5%;
+        }
+        .displayscreenFour .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 9%;
+            height: 1.9rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenFour h5 {
+            margin-top: 1.9%;
+            font-size: 1.2rem;
+            margin-left: 9%;
+            font-weight: 400;
+        }
+        .displayscreenFour .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFour .brands img {
+            height: 2rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenFour .mainImg img {
+            height: 45vh;
+            margin-left: 59%;
+            margin-top: -18%;
+        }
+    
+        .displayscreenFive {
+            display: none;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        .displayscreenFive h3 {
+            font-size: 1.7rem;
+            width: 100%;
+            margin-left: 9%;
+            color: indigo;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .displayscreenFive p {
+            font-size: 1rem;
+            width: 42%;
+            margin-left: 9%;
+            margin-top: 1.9%;
+        }
+        .displayscreenFive .All-button {
+            background-color: rgb(252, 94, 26);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(252, 94, 26);
+            padding: 0.1rem;
+            margin: 0.2rem;
+            margin-left: 9%;
+            height: 1.9rem;
+            margin-top: 1.9%;
+        }
+        .displayscreenFive h5 {
+            margin-top: 1.5%;
+            font-size: 1.2rem;
+            margin-left: 9%;
+            font-weight: 400;
+        }
+        .displayscreenFive .brands {
+            margin-left: 9%;
+        }
+        .displayscreenFive .brands img {
+            height: 2rem;
+            margin-top: 1.9%;
+        }
+    
+        .displayscreenFive .mainImg img {
+            height: 45vh;
+            margin-left: 59%;
+            margin-top: -18%;
+        }
+        .heading {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1%;
+        }
+        .heading h3 {
+            font-size: 2rem;
+            margin-left: 1%;
+        }
+        .heading input {
+            width: 17%;
+            border-radius: 6px;
+            border: 1px solid lightgrey;
+            outline: none;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .deals {
+            height: 100vh;
+        }
+        .dealLinks h3 {
+            margin-left: 59%;
+            margin-top: 1%;
+            font-weight: bold;
+            color: rgb(62, 48, 48);
+        }
+        .dealLinks .deal img {
+            height: 70px;
+            width: 70px;
+            margin-top: 5%;
+            margin-left: 32%;
+            border: 1px solid lightgray;
+            border-radius: 50%;
+        }
+        .dealLinks {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            margin: 1.5rem;
+            padding: 0.3rem;
+            grid-gap: 2rem;
+            width: 90%;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+        .deal label {
+            font-size: 0.7rem;
+           margin-left: 39%;
+        }
+        hr {
+            color: lightgray;
+        } 
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 2rem;
+            margin-top: 3%;
+            margin-left: 7%;
+        }
+        .products .product img {
+            height: 25vh;
+            width: 28vh;
+        }
+        .products .product .AddtoCartbutton {
+            border: 1px solid tomato;
+            border-radius: 22px;
+            background-color: tomato;
+            padding: 0.3rem;
+            margin: 0.6rem;
+        }
+        .deal a  {
+            text-decoration: none;
+        }
+        .products .product span {
+            margin-top: 1%;
+        }
+        .cart {
+            margin-top: 15%;
+        }
+    
+    
+        .product span {
+            color: green;
+            font-size: 0.7rem;
+        }
+
+        .sellerProducts .left {
+            width: 40%;
+        }
+        #right {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-left: 35%;
+            grid-gap: 7rem;
+            margin-top: 10%;
+        }
+        #right img {
+            height: 20vh;
+            width: 20vh;
+            margin-top: -53%;
+        }
+        #rightSide {
+            display: flex;
+            margin-right: 2%;
+            justify-content: space-between;
+            margin-top: -50%;
+        }
+        #rightSide h4 {
+            margin-left: 33%;
+            margin-top: 4%;
+        }
+        .Deletebutton {
+            border: 1px solid red;
+            outline: none;
+            background-color: red;
+            border-radius: 6px;
+            padding: 0.1rem;
+            height: 1.8rem;
+        }
+        .Editbutton {
+    
+            border: 1px solid green;
+            outline: none;
+            background-color: green;
+            border-radius: 6px;
+            padding: 0.2rem;
+            height: 1.8rem;
+            width: 35%;
+    
+        }
+    
+        .sellerProducts .rightSide {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+            padding: 0.2rem;
+            margin-left: 60%;
+            margin-right: -129%; 
+            margin-top: -2%;
+        }
+        .AddNewProduct {
+            border: 1px solid blue;
+            border-radius: 6px;
+            background-color: blue;
+            padding: 0.3rem;
+            margin-top: 4%;
+        }
+    
+        
+    
+        .PurchaseButton {
+            border: 1px solid blue;
+            border-radius: 6px;
+            background-color: blue;
+            padding: 0.3rem;
+            margin-top: 5%;
+    
+        }
+    
+        .cart {
+            margin-top: 5%;
+            padding: 10px;
+            width: 50%;
+            margin-left: 15%;
+            border: 1px solid #ccc;
+            justify-content: space-evenly;
+        }
+        .cart ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 10%;
+        }
+    
+        .cart ul  li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.1rem;
+        }
+        .left img {
+            height: 95vh;
+            width: 50vh;
+        }
+    
+        h1 {
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+    
+        .createProduct {
+            margin-top: 10%;
+            border: 1px solid lightskyblue;
+            background-color: lightskyblue;
+            border-radius: 12px;
+            width: 36%;
+            height: 62vh;
+            margin-left: 2%;
+            display: none;
+        }
+        .createProduct .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            margin-left: 3%;
+        }
+        .form input {
+            padding: 0.4rem;
+            margin: 1rem;
+            border-radius: 12px;
+            margin-left: 21%;
+        }
+        .AddProduct {
+            border: 1px solid royalblue;
+            border-radius: 6px;
+            background-color: royalblue;
+            width: 25%;
+            padding: 0.3rem;
+            margin-left: 39%;
+        }
+        .rightSeller {
+            /* align-items: center; */
+            margin-left: 120%;
+            width: 70%;
+            margin-top: -79%;
+        }
+        .pro img {
+            height: 20vh;
+            width: 25vh;
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+        .rightSeller h3 {
+            width: 100%;
+            margin-top: -15%;
+        }
+        .rightSeller p {
+            margin-top: 1%;
+            width: 80%;
+        }
+        .pro h6 {
+            margin-left: 17%;
+        }
+        .productPrice {
+            margin-left: 10%;
+        }
+        .sellerButton {
+            border: 1px solid crimson;
+            border-radius: 12px;
+            background-color: crimson;
+            padding: 0.2rem;
+            margin-top: 3%;
+            width: 30%;
+            margin-left: 9%;
+        }
+    
+        .increase, .decrease {
+            border: 1px solid #333;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+        }
+    
+         .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 5%;
+            justify-items: center;
+            padding: 0.3rem;
+            background-color: #333;
+            height: 20vh;
+            margin-left: -10%;
+        }
+        .boxes ul li {
+            list-style: none;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: lighter;
+        }
+        .boxes ul li h4 {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+    
+        .under {
+            margin-top: 15%;
+        }
+        .under h1 {
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+    
+        .All-buttonTwo {
+            background-color: lightseagreen;
+            color: black;
+            border-radius: 3px;
+            border: 1px solid lightseagreen;
+            width: 6%;
+            height: 1.9rem;
+            margin: 1%;
+            margin-top: 1.7%;
+            margin-left: 2%;
+        } 
+
+    }
+    
+   
+
+   

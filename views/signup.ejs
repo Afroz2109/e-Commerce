@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+
+    <form class="signup" action="/signup" method="POST">
+        <input type="text" id="name" name="name" required placeholder="Enter your Name">
+        <input type="email" id="email" name="email" required placeholder="Enter Email">
+        <input type="password" id="password" name="password" required placeholder="Create Password">
+        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
+        
+        <button class="Signup" type="submit">Sign Up</button> 
+
+        <p>Already have an Account please signin</p>
+        <a href="/signin">Login</a>
+
+    </form>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url('images/backgroundOne.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85vh;
+    }
+
+    @media(min-width:360px) {
+        .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem;
+        margin: 1.4rem;
+        border: 1px solid blueviolet;
+        background-color: blueviolet;
+        width: 58%;
+        border-radius: 6px;
+        margin-left: 18%;
+        margin-top: 18%;
+    }
+    input {
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Signup {
+        border: 1px solid grey;
+        border-radius: 12px;
+        background-color: darkslategrey;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        width: 40%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid blue;
+        background-color: blue;
+        border-radius: 6px;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+        width: 25%;
+        text-align: center;
+
+    }
+    p {
+        font-size: 0.6rem;
+        color: lightseagreen;
+        margin-bottom: 1%;
+    }
+    }
+
+    @media(min-width:1200px) {
+        .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem;
+        margin: 1.4rem;
+        border: 1px solid blueviolet;
+        background-color: blueviolet;
+        width: 18%;
+        border-radius: 6px;
+        margin-left: 36%;
+        margin-top: 10%;
+    }
+    input {
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Signup {
+        border: 1px solid grey;
+        border-radius: 12px;
+        background-color: darkslategrey;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        width: 40%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid blue;
+        background-color: blue;
+        border-radius: 6px;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+
+    }
+    }
+   
+</style>

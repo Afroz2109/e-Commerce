@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .order {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .order h3 {
+            margin: 0 0 10px 0;
+    
+        }
+        .order li {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin-right: 10%;
+        }
+        .order p {
+            font-size: 0.9rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Orders</h1>
+        <ul id="orderItems"></ul>
+    </div>
+
+    <script src="path/to/your/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Display orders
+            function displayOrders() {
+                const orderItemsList = document.getElementById('orderItems');
+                if (!orderItemsList) return;
+    
+                const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    
+                orders.forEach((order, index) => {
+                    const orderDiv = document.createElement('div');
+                    orderDiv.className = 'order';
+                    orderDiv.innerHTML = `<h3>Order ${index + 1}</h3>`;
+    
+                    order.items.forEach(item => {
+                        const li = document.createElement('li');
+    
+                        // Create an image element
+                        const imgElement = document.createElement('img');
+                        imgElement.src = item.image; // Use the image URL stored in item
+                        imgElement.style.width = '100px'; // Adjust width as needed
+    
+                        // Create a text node
+                        const textElement = document.createTextNode(` ${item.name} - ₹${item.price} x ${item.quantity}`);
+    
+                        // Append image and text to the list item
+                        li.appendChild(imgElement);
+                        li.appendChild(textElement);
+    
+                        // Append the list item to the order div
+                        orderDiv.appendChild(li);
+                    });
+    
+                    const totalLi = document.createElement('p');
+                    totalLi.textContent = `Total: ₹${order.total.toFixed(2)}`;
+                    orderDiv.appendChild(totalLi);
+    
+                    // Append the order div to the order items list
+                    orderItemsList.appendChild(orderDiv);
+                });
+            }
+    
+            // Call displayOrders to populate the page with order data
+            displayOrders();
+        });
+    </script>
+    
+</body>
+</html>

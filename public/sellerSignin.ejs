@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+
+    <form class="signin" action="/sellerSignin" method="POST">
+        <p>Start your own business by signing in</p>
+        <input type="email" id="email" name="email" required placeholder="Enter Email">
+        <input type="password" id="password" name="password" required placeholder="Enter Password">
+        <button class="Signin" type="submit">Sign In</button> 
+    </form>
+    
+    
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: crimson;
+    }
+
+    body {
+        background-image: url('images/WhatsApp Image 2024-09-20 at 11.40.19_1d5b8059.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 75vh;
+    }
+
+    @media(min-width:360px) {
+        .signin {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 0.9rem;
+           margin: 1.4rem;
+           border: 1px solid blueviolet;
+           background-color: blueviolet;
+           width: 70%;
+           border-radius: 6px;
+           margin-left: 11%;
+           margin-top: 29%;
+        }
+        input {
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Signin {
+        border: 1px solid grey;
+        border-radius: 12px;
+        background-color: darkslategrey;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        width: 40%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid blue;
+        background-color: blue;
+        border-radius: 6px;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+
+    }
+    }
+
+    @media(min-width:1200px) {
+        .signin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem;
+        margin: 1.4rem;
+        border: 1px solid blueviolet;
+        background-color: blueviolet;
+        width: 25%;
+        border-radius: 6px;
+        margin-left: 39%;
+        margin-top: 17%;
+    }
+    input {
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Signin {
+        border: 1px solid grey;
+        border-radius: 12px;
+        background-color: darkslategrey;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        width: 40%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid blue;
+        background-color: blue;
+        border-radius: 6px;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+
+    }
+    }
+</style>
+
+script
