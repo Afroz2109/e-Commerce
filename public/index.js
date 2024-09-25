@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (logoutButton) {
             logoutButton.addEventListener('click', () => {
                 // console.log('Logout button clicked');
-                window.location.href = 'http://localhost:5000/signin';
+                window.location.href = 'https://e-commerce-f523.onrender.com/signin';
             });
         }
     }
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sellerSigninButton) {
             sellerSigninButton.addEventListener('click', () => {
                 console.log('Button clicked'); // Check if the click event is firing
-                window.location.href = 'http://localhost:5000/sellerSignin';
+                window.location.href = 'https://e-commerce-f523.onrender.com/sellerSignin';
             });
         }
     }
